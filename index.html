@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sampanna S</title>
+  <style>
+    :root {
+      --accent: #4fc3f7;
+      --accent2: #81c784;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #eceff1;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .wrap {
+      width: 100%;
+      max-width: 720px;
+      text-align: center;
+    }
+    h1 {
+      font-size: clamp(2rem, 6vw, 3.2rem);
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+    .tagline {
+      color: #b0bec5;
+      font-size: 1.05rem;
+      margin-bottom: 40px;
+    }
+    .section-title {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.8rem;
+      color: var(--accent2);
+      margin-bottom: 16px;
+    }
+    .card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(79,195,247,0.25);
+      border-radius: 14px;
+      padding: 22px 26px;
+      text-align: left;
+      transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      border-color: var(--accent);
+      background: rgba(79,195,247,0.1);
+    }
+    .card h2 {
+      color: var(--accent);
+      font-size: 1.2rem;
+      margin-bottom: 6px;
+    }
+    .card p {
+      color: #cfd8dc;
+      font-size: 0.9rem;
+    }
+    .card .arrow {
+      float: right;
+      color: var(--accent2);
+      font-size: 1.4rem;
+    }
+    footer {
+      margin-top: 48px;
+      font-size: 0.8rem;
+      color: #607d8b;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Sampanna S</h1>
+    <p class="tagline">Presentations &amp; projects</p>
+
+    <p class="section-title">Presentations</p>
+    <a class="card" href="presentations/unit8-web-deployment/">
+      <span class="arrow">&rarr;</span>
+      <h2>Unit 8: Web Application Deployment</h2>
+      <p>Deployment, platforms, Gunicorn, HTTPS, monitoring &amp; security (8.1&ndash;8.8).</p>
+    </a>
+
+    <footer>Hosted on GitHub Pages</footer>
+  </div>
+</body>
+</html>
